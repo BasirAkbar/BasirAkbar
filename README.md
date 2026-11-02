@@ -7,7 +7,8 @@
 
 <p align="center">
   <a href="https://scholar.google.com/citations?user=rmfRJQEAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-62%20citations%20·%20h--index%204-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
-  <a href="mailto:akbar_basir786@jbnu.ac.kr"><img src="https://img.shields.io/badge/Email-JBNU-0B3D91?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email"></a>
+  <a href="mailto:akbar_basir786@jbnu.ac.kr"><img src="https://img.shields.io/badge/akbar__basir786%40jbnu.ac.kr-0B3D91?style=for-the-badge&logo=maildotru&logoColor=white" alt="Academic email"></a>
+  <a href="mailto:basirakbar98@gmail.com"><img src="https://img.shields.io/badge/basirakbar98%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"></a>
   <a href="LINKEDIN_URL"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
 
