@@ -9,7 +9,7 @@
   <a href="https://scholar.google.com/citations?user=rmfRJQEAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-62%20citations%20·%20h--index%204-4285F4?style=flat-square&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
   <a href="mailto:akbar_basir786@jbnu.ac.kr"><img src="https://img.shields.io/badge/akbar__basir786%40jbnu.ac.kr-0B3D91?style=flat-square&logo=maildotru&logoColor=white" alt="Academic email"></a>
   <a href="mailto:basirakbar98@gmail.com"><img src="https://img.shields.io/badge/basirakbar98%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"></a>
-  <a href="LINKEDIN_URL"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.researchgate.net/profile/Basir-Akbar"><img src="https://img.shields.io/badge/ResearchGate-Basir%20Akbar-00CCBB?style=flat-square&logo=researchgate&logoColor=white" alt="ResearchGate"></a>
 </p>
 
 ---
