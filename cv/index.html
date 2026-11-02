@@ -3,42 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Basir Akbar — Curriculum Vitae</title>
+<title>Basir Akbar CV</title>
 <meta name="description" content="Basir Akbar — Ph.D. researcher in AI for photovoltaic materials: graph neural networks, generative AI, perovskite and organic solar cells.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f6f4ef; --surface:#ffffff; --surface-2:#efece4; --ink:#16181d; --muted:#5b616e; --line:#e2ded3;
-  --accent:#d9480f; --accent-2:#0b6e74; --accent-soft:#fbe9df; --teal-soft:#dff1f1;
-  --shadow:0 1px 2px rgba(20,20,30,.05),0 10px 30px -12px rgba(20,20,30,.18);
-  --radius:18px;
+  /* Layout: single column of sections, hero with stat panel, card grid for papers */
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --bg:#f4f6f9; --surface:#ffffff; --surface-2:#e9edf3; --ink:#111827; --muted:#566070; --line:#dce2ea;
+  --accent:#1d4e89; --accent-2:#b45309; --accent-soft:#e3ecf7; --teal-soft:#fbeedc; --dot3:#6b4fbb; --dot4:#0f766e;
+  --shadow:0 1px 2px rgba(17,24,39,.05),0 10px 28px -14px rgba(17,24,39,.2);
+  --radius:14px;
 }
 :root[data-theme="dark"]{
-  --bg:#0f1115; --surface:#171a21; --surface-2:#1e222b; --ink:#eef0f4; --muted:#9aa1ae; --line:#2a2f3a;
-  --accent:#ff7a3d; --accent-2:#3cc4c9; --accent-soft:#3a2216; --teal-soft:#123234;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 14px 34px -14px rgba(0,0,0,.6);
+  --bg:#0d1117; --surface:#151b24; --surface-2:#1d2430; --ink:#e8edf4; --muted:#9aa5b5; --line:#273040;
+    --accent:#7fb0ec; --accent-2:#f5a524; --accent-soft:#1a2a40; --teal-soft:#3a2a12; --dot3:#a48bf0; --dot4:#3cc4b4;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 14px 34px -14px rgba(0,0,0,.6); color-scheme:dark;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#0f1115; --surface:#171a21; --surface-2:#1e222b; --ink:#eef0f4; --muted:#9aa1ae; --line:#2a2f3a;
-    --accent:#ff7a3d; --accent-2:#3cc4c9; --accent-soft:#3a2216; --teal-soft:#123234;
-    --shadow:0 1px 2px rgba(0,0,0,.3),0 14px 34px -14px rgba(0,0,0,.6);
+    --bg:#0d1117; --surface:#151b24; --surface-2:#1d2430; --ink:#e8edf4; --muted:#9aa5b5; --line:#273040;
+    --accent:#7fb0ec; --accent-2:#f5a524; --accent-soft:#1a2a40; --teal-soft:#3a2a12; --dot3:#a48bf0; --dot4:#3cc4b4;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 14px 34px -14px rgba(0,0,0,.6); color-scheme:dark;
   }
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
 a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:650;letter-spacing:-.01em;margin:0}
-.mono{font-family:"JetBrains Mono",monospace;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.01em;margin:0}
+.mono{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
 
 /* nav */
-nav{position:sticky;top:0;z-index:20;backdrop-filter:saturate(1.4) blur(12px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;backdrop-filter:saturate(1.4) blur(12px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;gap:18px;height:58px}
-nav .brand{font-family:Fraunces,serif;font-weight:650;text-decoration:none;font-size:1.05rem}
+nav .brand{font-family:var(--display);font-weight:700;text-decoration:none;font-size:1.05rem}
 nav .links{display:flex;gap:18px;margin-left:auto;font-size:.92rem}
 nav .links a{text-decoration:none;color:var(--muted)}
 nav .links a:hover{color:var(--ink)}
@@ -47,7 +50,7 @@ nav .links a:hover{color:var(--ink)}
 
 /* hero */
 header.hero{padding:72px 0 48px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:auto -10% -40% auto;width:560px;height:560px;border-radius:50%;
+.hero::before{display:none;content:"";position:absolute;inset:auto -10% -40% auto;width:560px;height:560px;border-radius:50%;
   background:radial-gradient(circle at 40% 40%,color-mix(in srgb,var(--accent) 30%,transparent),transparent 62%);filter:blur(10px);opacity:.55;pointer-events:none}
 .hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:end;position:relative}
 .hero h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02}
@@ -59,7 +62,7 @@ header.hero{padding:72px 0 48px;position:relative;overflow:hidden}
 .chip svg{width:16px;height:16px}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-.stat .n{font-family:Fraunces,serif;font-size:2rem;line-height:1;color:var(--accent)}
+.stat .n{font-family:var(--display);font-size:2rem;line-height:1;color:var(--accent)}
 .stat .l{font-size:.82rem;color:var(--muted);margin-top:6px}
 @media(max-width:820px){.hero-grid{grid-template-columns:1fr}header.hero{padding-top:44px}}
 
@@ -71,29 +74,29 @@ section{padding:56px 0;border-top:1px solid var(--line)}
 /* about */
 .about{display:grid;grid-template-columns:1.3fr 1fr;gap:32px}
 .about p{margin:0 0 14px;font-size:1.05rem}
-.focus{display:grid;gap:10px}
+.focus{display:grid;gap:10px;align-content:start}
 .focus div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
 .focus .dot{width:10px;height:10px;border-radius:50%;margin-top:8px;flex:none}
 @media(max-width:820px){.about{grid-template-columns:1fr}}
 
 /* publications */
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
-.filter{border:1px solid var(--line);background:var(--surface);color:var(--muted);padding:8px 14px;border-radius:999px;cursor:pointer;font:500 .88rem Inter,sans-serif}
+.filter{border:1px solid var(--line);background:var(--surface);color:var(--muted);padding:8px 14px;border-radius:999px;cursor:pointer;font:500 .88rem var(--body)}
 .filter[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .pubs{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px}
 .pub{position:relative;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;cursor:pointer;box-shadow:var(--shadow);transition:transform .2s,border-color .2s;display:flex;flex-direction:column;gap:12px;font:inherit;color:inherit}
 .pub:hover,.pub:focus-visible{transform:translateY(-4px);border-color:var(--accent);outline:none}
 .pub .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.tag{font:500 .72rem "JetBrains Mono",monospace;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:6px}
+.tag{font:500 .72rem var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:6px}
 .tag.pv{background:var(--accent-soft);color:var(--accent)}
 .tag.os{background:var(--teal-soft);color:var(--accent-2)}
-.pub .year{font-family:Fraunces,serif;font-size:1.4rem;color:var(--muted)}
+.pub .year{font-family:var(--display);font-size:1.4rem;color:var(--muted)}
 .pub h3{font-size:1.12rem;line-height:1.3}
 .pub .venue{font-size:.86rem;color:var(--muted);font-style:italic}
 .pub .hook{font-size:.93rem;color:var(--muted);margin:0}
 .pub .more{margin-top:auto;font-weight:600;font-size:.88rem;color:var(--accent);display:flex;align-items:center;gap:6px}
 .pub .metric{display:flex;gap:8px;flex-wrap:wrap}
-.metric span{font:500 .78rem "JetBrains Mono",monospace;background:var(--surface-2);border-radius:6px;padding:4px 8px}
+.metric span{font:500 .78rem var(--mono);background:var(--surface-2);border-radius:6px;padding:4px 8px}
 
 /* modal */
 dialog{border:none;padding:0;border-radius:22px;max-width:760px;width:calc(100% - 32px);background:var(--surface);color:var(--ink);box-shadow:0 30px 80px -20px rgba(0,0,0,.5)}
@@ -108,13 +111,13 @@ dialog[open]{animation:pop .22s ease-out}
 .m-body{padding:22px 28px 28px;max-height:62vh;overflow:auto}
 .flow{display:grid;gap:14px}
 .step{display:grid;grid-template-columns:42px 1fr;gap:14px}
-.step .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);font-size:1.15rem}
-.step h4{margin:2px 0 4px;font:600 .8rem "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.step .ic{font:600 .95rem var(--mono);color:var(--accent);width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);font-size:1.15rem}
+.step h4{margin:2px 0 4px;font:600 .8rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 .step p,.step ul{margin:0;font-size:.97rem}
 .step ul{padding-left:18px}
 .kpis{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 4px}
 .kpi{background:var(--accent-soft);color:var(--accent);border-radius:10px;padding:10px 14px}
-.kpi b{display:block;font-family:Fraunces,serif;font-size:1.35rem;line-height:1.1}
+.kpi b{display:block;font-family:var(--display);font-size:1.35rem;line-height:1.1}
 .kpi small{font-size:.75rem}
 .m-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;font-weight:600;font-size:.9rem;text-decoration:none;border:1px solid var(--line);background:var(--surface-2)}
@@ -133,7 +136,7 @@ dialog[open]{animation:pop .22s ease-out}
 .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
 .t-item{position:relative;margin-bottom:26px}
 .t-item::before{content:"";position:absolute;left:-27px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
-.t-item .when{font:500 .8rem "JetBrains Mono",monospace;color:var(--muted)}
+.t-item .when{font:500 .8rem var(--mono);color:var(--muted)}
 .t-item h3{font-size:1.15rem;margin:2px 0}
 .t-item .where{color:var(--muted);font-size:.95rem}
 .t-item ul{margin:8px 0 0;padding-left:18px;font-size:.96rem}
@@ -142,12 +145,12 @@ dialog[open]{animation:pop .22s ease-out}
 .repos{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
 .repo{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-decoration:none;display:flex;flex-direction:column;gap:8px;transition:transform .2s,border-color .2s}
 .repo:hover{transform:translateY(-3px);border-color:var(--accent-2)}
-.repo .name{font:600 .95rem "JetBrains Mono",monospace;word-break:break-word;color:var(--accent-2)}
+.repo .name{font:600 .95rem var(--mono);word-break:break-word;color:var(--accent-2)}
 .repo p{margin:0;color:var(--muted);font-size:.93rem}
 
+.pub,.repo,.focus>div,.stat,.about>div{min-width:0}
 footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;text-align:center}
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
+.reveal{opacity:1}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 @media print{nav,.filters,.m-actions,.icon-btn{display:none}.reveal{opacity:1;transform:none}section{break-inside:avoid}}
 </style>
@@ -193,7 +196,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
 <main>
 <section id="about">
   <div class="wrap">
-    <div class="sec-head"><span class="mono">01</span><h2>About</h2></div>
+    <div class="sec-head"><h2>About</h2></div>
     <div class="about reveal">
       <div>
         <p>I apply artificial intelligence to photovoltaic materials. My work spans small, carefully curated experimental datasets and simulation and molecular libraries of millions of entries. In every project I check what the models predict against experiment.</p>
@@ -203,8 +206,8 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
       <div class="focus">
         <div><span class="dot" style="background:var(--accent)"></span><span><b>Perovskite solar cells</b><br><small style="color:var(--muted)">Recombination-loss diagnosis, 2D RP/DJ phase classification</small></span></div>
         <div><span class="dot" style="background:var(--accent-2)"></span><span><b>Organic semiconductors</b><br><small style="color:var(--muted)">HOMO/LUMO, gap and excitation-energy prediction</small></span></div>
-        <div><span class="dot" style="background:#7c4dff"></span><span><b>Graph neural networks</b><br><small style="color:var(--muted)">Residual-gated &amp; hybrid residual GNNs, multi-task, transfer learning</small></span></div>
-        <div><span class="dot" style="background:#e0a100"></span><span><b>Generative AI</b><br><small style="color:var(--muted)">Property-conditioned SMILES generation (LlaMol) with validity/novelty filters</small></span></div>
+        <div><span class="dot" style="background:var(--dot3)"></span><span><b>Graph neural networks</b><br><small style="color:var(--muted)">Residual-gated &amp; hybrid residual GNNs, multi-task, transfer learning</small></span></div>
+        <div><span class="dot" style="background:var(--dot4)"></span><span><b>Generative AI</b><br><small style="color:var(--muted)">Property-conditioned SMILES generation (LlaMol) with validity/novelty filters</small></span></div>
       </div>
     </div>
   </div>
@@ -212,7 +215,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
 
 <section id="publications">
   <div class="wrap">
-    <div class="sec-head"><span class="mono">02</span><h2>Publications</h2><span style="color:var(--muted);font-size:.95rem">Click a paper to see its objective, approach and findings</span></div>
+    <div class="sec-head"><h2>Publications</h2><span style="color:var(--muted);font-size:.95rem">Click a paper to see its objective, approach and findings</span></div>
     <div class="filters" role="group" aria-label="Filter publications">
       <button class="filter" data-f="all" aria-pressed="true">All</button>
       <button class="filter" data-f="pv" aria-pressed="false">Perovskite</button>
@@ -224,19 +227,19 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
 
 <section id="skills">
   <div class="wrap">
-    <div class="sec-head"><span class="mono">03</span><h2>Skills</h2></div>
+    <div class="sec-head"><h2>Skills</h2></div>
     <div class="skills">
-      <div class="skill reveal"><h3>🧠 Machine &amp; Deep Learning</h3><div class="pills"><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>scikit-learn</span><span>XGBoost</span><span>Graph Neural Networks</span><span>Transformers</span><span>Stacked ensembles</span><span>Multi-task learning</span><span>Transfer learning</span><span>Optuna</span><span>SHAP</span></div></div>
-      <div class="skill reveal"><h3>🧪 Generative AI &amp; Cheminformatics</h3><div class="pills"><span>Property-conditioned generation</span><span>LlaMol</span><span>Constraint-aware sampling</span><span>Diversity control</span><span>Validity / novelty checks</span><span>Feasibility screening</span><span>RDKit</span><span>SMILES &amp; molecular graphs</span></div></div>
-      <div class="skill reveal"><h3>🌐 Web Development</h3><div class="pills"><span>Flask</span><span>FastAPI</span><span>REST APIs</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Model serving</span><span>Web servers for ML</span><span>Linux deployment</span></div></div>
-      <div class="skill reveal"><h3>📊 Data &amp; Tools</h3><div class="pills"><span>Python</span><span>C++</span><span>Pandas</span><span>NumPy</span><span>SciPy</span><span>Matplotlib</span><span>Seaborn</span><span>Jupyter</span><span>Git &amp; GitHub</span><span>Linux</span></div></div>
+      <div class="skill reveal"><h3>Machine &amp; Deep Learning</h3><div class="pills"><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>scikit-learn</span><span>XGBoost</span><span>Graph Neural Networks</span><span>Transformers</span><span>Stacked ensembles</span><span>Multi-task learning</span><span>Transfer learning</span><span>Optuna</span><span>SHAP</span></div></div>
+      <div class="skill reveal"><h3>Generative AI &amp; Cheminformatics</h3><div class="pills"><span>Property-conditioned generation</span><span>LlaMol</span><span>Constraint-aware sampling</span><span>Diversity control</span><span>Validity / novelty checks</span><span>Feasibility screening</span><span>RDKit</span><span>SMILES &amp; molecular graphs</span></div></div>
+      <div class="skill reveal"><h3>Web Development</h3><div class="pills"><span>Flask</span><span>FastAPI</span><span>REST APIs</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Model serving</span><span>Web servers for ML</span><span>Linux deployment</span></div></div>
+      <div class="skill reveal"><h3>Data &amp; Tools</h3><div class="pills"><span>Python</span><span>C++</span><span>Pandas</span><span>NumPy</span><span>SciPy</span><span>Matplotlib</span><span>Seaborn</span><span>Jupyter</span><span>Git &amp; GitHub</span><span>Linux</span></div></div>
     </div>
   </div>
 </section>
 
 <section id="experience">
   <div class="wrap">
-    <div class="sec-head"><span class="mono">04</span><h2>Experience &amp; Education</h2></div>
+    <div class="sec-head"><h2>Experience &amp; Education</h2></div>
     <div class="timeline">
       <div class="t-item reveal">
         <div class="when">Sep 2022 — Present</div>
@@ -267,7 +270,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
 
 <section id="code">
   <div class="wrap">
-    <div class="sec-head"><span class="mono">05</span><h2>Open-Source Code</h2></div>
+    <div class="sec-head"><h2>Open-Source Code</h2></div>
     <div class="repos">
       <a class="repo reveal" href="https://github.com/BasirAkbar/xgboost_perovskite" target="_blank" rel="noopener"><span class="name">xgboost_perovskite</span><p>XGBoost + SHAP model for the dominant recombination loss in perovskite solar cells.</p><span class="tag pv" style="align-self:flex-start">iScience 2024</span></a>
       <a class="repo reveal" href="https://github.com/BasirAkbar/Dominant-Recombination-Loss-Perovskite-solar-cell-" target="_blank" rel="noopener"><span class="name">Dominant-Recombination-Loss-Perovskite-solar-cell-</span><p>Stacked ensemble classifier with trained models, labels and results.</p><span class="tag pv" style="align-self:flex-start">EAAI 2025</span></a>
@@ -391,10 +394,10 @@ grid.addEventListener('click',e=>{
   document.getElementById('m-authors').innerHTML=p.authors;
   document.getElementById('m-kpis').innerHTML=p.kpis.map(k=>`<div class="kpi"><b>${k[0]}</b><small>${k[1]}</small></div>`).join('');
   document.getElementById('m-flow').innerHTML=`
-    <div class="step"><div class="ic">🎯</div><div><h4>Objective</h4><p>${p.objective}</p></div></div>
-    <div class="step"><div class="ic">⚙️</div><div><h4>Approach</h4><ul>${p.approach.map(a=>`<li>${a}</li>`).join('')}</ul></div></div>
-    <div class="step"><div class="ic">📈</div><div><h4>Key findings</h4><p>${p.findings}</p></div></div>
-    <div class="step"><div class="ic">🚀</div><div><h4>Impact</h4><p>${p.impact}</p></div></div>`;
+    <div class="step"><div class="ic">1</div><div><h4>Objective</h4><p>${p.objective}</p></div></div>
+    <div class="step"><div class="ic">2</div><div><h4>Approach</h4><ul>${p.approach.map(a=>`<li>${a}</li>`).join('')}</ul></div></div>
+    <div class="step"><div class="ic">3</div><div><h4>Key findings</h4><p>${p.findings}</p></div></div>
+    <div class="step"><div class="ic">4</div><div><h4>Impact</h4><p>${p.impact}</p></div></div>`;
   document.getElementById('m-actions').innerHTML=`<a class="btn primary" href="${p.link}" target="_blank" rel="noopener">${p.linkLabel} ↗</a>`+(p.repo?`<a class="btn" href="${p.repo}" target="_blank" rel="noopener">View code on GitHub ↗</a>`:'');
   modal.showModal();
 });
