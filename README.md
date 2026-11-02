@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://scholar.google.com/citations?user=rmfRJQEAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-62%20citations%20·%20h--index%204-4285F4?style=flat-square&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
+  <a href="https://scholar.google.com/citations?user=rmfRJQEAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-Basir%20Akbar-4285F4?style=flat-square&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
   <a href="mailto:akbar_basir786@jbnu.ac.kr"><img src="https://img.shields.io/badge/akbar__basir786%40jbnu.ac.kr-0B3D91?style=flat-square&logo=maildotru&logoColor=white" alt="Academic email"></a>
   <a href="mailto:basirakbar98@gmail.com"><img src="https://img.shields.io/badge/basirakbar98%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"></a>
   <a href="https://www.researchgate.net/profile/Basir-Akbar"><img src="https://img.shields.io/badge/ResearchGate-Basir%20Akbar-00CCBB?style=flat-square&logo=researchgate&logoColor=white" alt="ResearchGate"></a>
@@ -82,17 +82,13 @@ I build **machine learning, deep learning, and generative AI** systems that pred
 
 ## Publications
 
-[![Citations](https://img.shields.io/badge/Citations-62-4285F4?style=flat-square)](https://scholar.google.com/citations?user=rmfRJQEAAAAJ&hl=en)
-[![h-index](https://img.shields.io/badge/h--index-4-34A853?style=flat-square)](https://scholar.google.com/citations?user=rmfRJQEAAAAJ&hl=en)
-[![i10-index](https://img.shields.io/badge/i10--index-3-FBBC05?style=flat-square)](https://scholar.google.com/citations?user=rmfRJQEAAAAJ&hl=en)
-
-| Year | Publication | Journal | Cited |
-|:----:|:------------|:--------|:-----:|
-| 2026 | **B. Akbar**, A. Khan, R. A. Shaukat, K. T. Chong, M. U. Rehman, H. Tayara. *Multi-task hybrid residual graph neural networks for predicting electronic properties of photovoltaic and organic materials* | Materials Today Communications, 116377 | — |
-| 2025 | **B. Akbar**, K. T. Chong, H. Tayara. *Ensemble insights: Unlocking the recombination losses in perovskite solar cells using stacked classifier* | Engineering Applications of Artificial Intelligence 153, 110909 | 10 |
-| 2025 | **B. Akbar**, K. T. Chong, H. Tayara. *Analysis of Ruddlesden–Popper and Dion–Jacobson 2D lead halide perovskites through integrated experimental and computational analysis* | Battery Energy 4(2), e20240040 | 7 |
-| 2025 | A. Khan, **B. Akbar**, K. T. Chong, H. Tayara. *Bridging experiment and deep learning: Predicting electronic properties in organic semiconductors using residual-gated graph neural networks* | Materials Today Energy 52, 101959 | 10 |
-| 2024 | **B. Akbar**, H. Tayara, K. T. Chong. *Unveiling dominant recombination loss in perovskite solar cells with an XGBoost-based machine learning approach* | iScience 27(3) | 34 |
+| Year | Publication | Journal |
+|:----:|:------------|:--------|
+| 2026 | **B. Akbar**, A. Khan, R. A. Shaukat, K. T. Chong, M. U. Rehman, H. Tayara. *Multi-task hybrid residual graph neural networks for predicting electronic properties of photovoltaic and organic materials* | Materials Today Communications, 116377 |
+| 2025 | **B. Akbar**, K. T. Chong, H. Tayara. *Ensemble insights: Unlocking the recombination losses in perovskite solar cells using stacked classifier* | Engineering Applications of Artificial Intelligence 153, 110909 |
+| 2025 | **B. Akbar**, K. T. Chong, H. Tayara. *Analysis of Ruddlesden–Popper and Dion–Jacobson 2D lead halide perovskites through integrated experimental and computational analysis* | Battery Energy 4(2), e20240040 |
+| 2025 | A. Khan, **B. Akbar**, K. T. Chong, H. Tayara. *Bridging experiment and deep learning: Predicting electronic properties in organic semiconductors using residual-gated graph neural networks* | Materials Today Energy 52, 101959 |
+| 2024 | **B. Akbar**, H. Tayara, K. T. Chong. *Unveiling dominant recombination loss in perovskite solar cells with an XGBoost-based machine learning approach* | iScience 27(3) |
 
 ---
 
