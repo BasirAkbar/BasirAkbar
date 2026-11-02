@@ -105,12 +105,4 @@ I build **machine learning, deep learning, and generative AI** systems that pred
 
 ---
 
-## Funding & Recognition
-
-- Research grant, National Research Foundation of Korea (NRF)
-- Research grant, Korea Institute of Energy Technology Evaluation and Planning (KETEP)
-- Best Publication Award
-
----
-
 <p align="center"><i>Open to postdoctoral opportunities in AI-driven materials discovery, perovskite photovoltaics, and organic electronics.</i></p>
