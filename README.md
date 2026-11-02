@@ -12,7 +12,7 @@
   <a href="https://www.researchgate.net/profile/Basir-Akbar"><img src="https://img.shields.io/badge/ResearchGate-Basir%20Akbar-00CCBB?style=flat-square&logo=researchgate&logoColor=white" alt="ResearchGate"></a>
 </p>
 
-<p align="center"><a href="https://basirakbar.github.io/BasirAkbar/cv/"><img src="https://img.shields.io/badge/📄%20Interactive%20CV-View%20online-D9480F?style=flat-square" alt="Interactive CV"></a></p>
+<p align="center"><a href="https://basirakbar.github.io/BasirAkbar/"><img src="https://img.shields.io/badge/📄%20Interactive%20CV-View%20online-D9480F?style=flat-square" alt="Interactive CV"></a></p>
 
 ---
 
